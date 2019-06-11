@@ -9,3 +9,13 @@ This file has implementation of filter by using 8 threads.
 Each thread works on a band of 128 rows and 1024 columns(entire width) of image.
 eg. 1st thread works from 0 to 127th row, 2nd thread works for 128th to 255th row and so on.
 
+### filter_2x2_partioned_image.cpp
+This file has implementation of filter by using 4 threads.
+Unlike previous code, this implementation has each thread working on one-forth of the image.
+Image is divided into 4 equal parts.
+1st thread works from (0,0) to (511,511) pixel  
+2nd thread works from (0,512) to (511,1023) pixel  
+3rd thread works from (512,0) to (1023,511) pixel  
+4th thread works from (512,512) to (1023,1023) pixel  
+
+
