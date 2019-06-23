@@ -18,4 +18,5 @@ Image is divided into 4 equal parts.
 3rd thread works from (512,0) to (1023,511) pixel  
 4th thread works from (512,512) to (1023,1023) pixel  
 
-
+### Rotate.c
+This code provides the method to rotate an image 90 degree right / left and 180 degree.
